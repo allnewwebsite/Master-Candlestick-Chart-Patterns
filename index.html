@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Trading Mastery - Candlestick Chart Patterns Guide</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="hero-section">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="assets/logo/logo.jpg" alt="Trading Mastery Logo" class="logo-image">
+                </div>
+            </div>
+        </nav>
+        
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <h1>Master Candlestick Chart Patterns</h1>
+                    <p>Learn the essential candlestick patterns that every successful trader needs to know. Transform your chart reading skills and boost your trading profits with this comprehensive guide!</p>
+                    <div class="hero-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>50+ Proven Patterns</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-eye"></i>
+                            <span>Visual Learning</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Quick Reference</span>
+                        </div>
+                    </div>
+                    <div class="cta-buttons">
+                        <button class="btn-primary" onclick="scrollToBook()">Get Your Copy Now</button>
+                        <button class="btn-secondary" onclick="scrollToPreview()">Preview Book</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="book-showcase" id="book-section">
+        <div class="container">
+            <div class="book-display">
+                <div class="book-images">
+                    <div class="main-book-image">
+                        <img src="assets/images/a.png" alt="Trading Book Cover" id="main-book-img">
+                    </div>
+                    <div class="book-thumbnails">
+                        <img src="assets/images/a.png" alt="Book Cover" class="thumbnail active" onclick="changeMainImage(this)">
+                        <img src="assets/images/b.png" alt="Book Page 1" class="thumbnail" onclick="changeMainImage(this)">
+                        <img src="assets/images/c.png" alt="Book Page 2" class="thumbnail" onclick="changeMainImage(this)">
+                        <img src="assets/images/d.png" alt="Book Page 3" class="thumbnail" onclick="changeMainImage(this)">
+                    </div>
+                </div>
+                
+                <div class="book-info">
+                    <h2>Candlestick Chart Patterns Guide</h2>
+                    <p class="book-subtitle">The Complete Visual Guide to Reading Market Emotions</p>
+                    <div class="book-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-text">5.0 (500+ traders) • Best Seller</span>
+                    </div>
+                    
+                    <div class="book-stats">
+                        <div class="stat">
+                            <strong>150+</strong>
+                            <span>Pages</span>
+                        </div>
+                        <div class="stat">
+                            <strong>50+</strong>
+                            <span>Patterns</span>
+                        </div>
+                        <div class="stat">
+                            <strong>100+</strong>
+                            <span>Examples</span>
+                        </div>
+                        <div class="stat">
+                            <strong>PDF</strong>
+                            <span>Format</span>
+                        </div>
+                    </div>
+                    
+                    <div class="book-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>50+ Essential Candlestick Patterns</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Real Market Examples & Case Studies</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Reversal & Continuation Patterns</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Entry & Exit Signal Strategies</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Risk Management Techniques</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Quick Reference Cheat Sheet</span>
+                        </div>
+                    </div>
+                    
+                    <div class="price-section">
+                        <div class="price-badge">
+                            <i class="fas fa-fire"></i>
+                            <span>Limited Time Offer!</span>
+                        </div>
+                        <div class="price">
+                            <span class="original-price">₹299</span>
+                            <span class="current-price" style="background: linear-gradient(45deg, #4CAF50, #66BB6A); color: white; padding: 8px 16px; border-radius: 8px; font-size: 24px; font-weight: 900; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); box-shadow: 0 4px 12px rgba(76,175,80,0.4); animation: pulse 2s infinite;">₹48</span>
+                            <span class="discount">84% OFF</span>
+                        </div>
+                        <div class="price-details">
+                            <p class="price-note">⚡ Flash Sale - Only 100 copies left!</p>
+                            <p class="value-note">💰 Save ₹251 today</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-proof">
+                        <div class="recent-sales">
+                            <i class="fas fa-users"></i>
+                            <span>50+ people bought this in the last 24 hours</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Payment Button -->
+                    <div class="payment-section">
+                        <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Qw6lX6vA5kFZCC" async> </script> </form>
+                        <p style="text-align: center; font-size: 14px; color: #666; margin: 10px 0;">
+                            <i class="fas fa-shield-alt"></i>
+                            Secure payment via Razorpay • Instant download after payment
+                        </p>
+                    </div>
+                    
+                    <!-- Download Instructions -->
+                    <div class="download-instructions" style="background: #e8f5e8; border: 2px solid #4CAF50; border-radius: 8px; padding: 20px; margin: 20px 0; text-align: center;">
+                        <h3 style="color: #2c5530; margin: 0 0 15px 0; font-size: 18px;">
+                            <i class="fas fa-download" style="margin-right: 8px; color: #4CAF50;"></i>
+                            Download Process
+                        </h3>
+                        <p style="color: #2c5530; font-size: 16px; font-weight: bold; margin: 0 0 10px 0;">
+                            📥 Download starts automatically after payment successful!
+                        </p>
+                        <div style="background: #fff; border-radius: 6px; padding: 15px; margin: 15px 0;">
+                            <p style="color: #333; font-size: 14px; margin: 0 0 10px 0;">
+                                <strong>If NOT downloaded:</strong> Share screenshot of payment on our Telegram channel
+                            </p>
+                            <a href="https://t.me/Mastercandlestickchartpattern" target="_blank" style="display: inline-block; background: #0088cc; color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; font-size: 14px; transition: background 0.3s ease;">
+                                <i class="fab fa-telegram-plane" style="margin-right: 8px;"></i>
+                                Join Telegram Channel
+                            </a>
+                        </div>
+                        <p style="color: #666; font-size: 12px; margin: 10px 0 0 0;">
+                            ⚡ Our support team will assist you within 1 hr
+                        </p>
+                    </div>
+                    
+                    <div class="security-badges">
+                        <div class="badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure Payment</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-download"></i>
+                            <span>Instant Download</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Mobile Friendly</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="book-benefits">
+        <div class="container">
+            <h2>Why Choose This Guide?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Learn from Experts</h3>
+                    <p>Written by professional traders with 15+ years of market experience. Get insights that only come from real trading floors.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h3>Visual Learning</h3>
+                    <p>Every pattern is explained with clear, colorful charts and real market examples. Perfect for visual learners.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Quick Results</h3>
+                    <p>Start recognizing profitable patterns within days. Our students report 60% improvement in trade accuracy.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Read on any device - phone, tablet, or computer. Perfect for studying while traveling or during market hours.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3>Lifetime Access</h3>
+                    <p>Download once, keep forever. No subscription fees, no expiration. Your personal trading reference for life.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Time-Saving</h3>
+                    <p>Condensed years of learning into one comprehensive guide. Get straight to what works in real markets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="what-you-learn">
+        <div class="container">
+            <h2>What You'll Learn</h2>
+            <div class="learning-content">
+                <div class="learning-text">
+                    <div class="learning-item">
+                        <div class="item-number">1</div>
+                        <div class="item-content">
+                            <h3>Pattern Recognition</h3>
+                            <p>Master the art of instantly recognizing 50+ candlestick patterns including Doji, Hammer, Engulfing, and more.</p>
+                        </div>
+                    </div>
+                    <div class="learning-item">
+                        <div class="item-number">2</div>
+                        <div class="item-content">
+                            <h3>Market Psychology</h3>
+                            <p>Understand what each pattern reveals about market sentiment and trader emotions.</p>
+                        </div>
+                    </div>
+                    <div class="learning-item">
+                        <div class="item-number">3</div>
+                        <div class="item-content">
+                            <h3>Trading Strategies</h3>
+                            <p>Learn proven entry and exit strategies based on candlestick patterns with risk management rules.</p>
+                        </div>
+                    </div>
+                    <div class="learning-item">
+                        <div class="item-number">4</div>
+                        <div class="item-content">
+                            <h3>Real Examples</h3>
+                            <p>Study 100+ real market examples from stocks, forex, and crypto markets.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="learning-image">
+                    <div class="preview-showcase">
+                        <img src="assets/images/a.png" alt="Book Preview">
+                        <div class="showcase-badge">
+                            <i class="fas fa-star"></i>
+                            <span>Best Seller</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="book-preview" id="preview-section">
+        <div class="container">
+            <h2>Book Preview</h2>
+            <div class="preview-gallery">
+                <div class="preview-image">
+                    <img src="assets/images/e.png" alt="Book Preview 1">
+                </div>
+                <div class="preview-image">
+                    <img src="assets/images/f.png" alt="Book Preview 2">
+                </div>
+                <div class="preview-image">
+                    <img src="assets/images/g.png" alt="Book Preview 3">
+                </div>
+                <div class="preview-image">
+                    <img src="assets/images/h.png" alt="Book Preview 4">
+                </div>
+                <div class="preview-image">
+                    <img src="assets/images/i.png" alt="Book Preview 5">
+                </div>
+                <div class="preview-image">
+                    <img src="assets/images/z.png" alt="Book Preview 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Traders Are Saying</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"This guide made candlestick patterns so much easier to understand. Now I can spot reversal patterns with confidence!"</p>
+                        <div class="testimonial-author">
+                            <strong>Rahul Sharma</strong>
+                            <span>Professional Trader</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Best resource for learning candlestick patterns. The visual examples are clear and practical for real trading."</p>
+                        <div class="testimonial-author">
+                            <strong>Priya Patel</strong>
+                            <span>Day Trader</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Simple, clear explanations of complex patterns. This guide improved my chart reading skills significantly."</p>
+                        <div class="testimonial-author">
+                            <strong>Amit Kumar</strong>
+                            <span>Swing Trader</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2>About Trading Mastery</h2>
+            <div class="about-content">
+                <p>We are a team of professional traders and market analysts with over 15 years of combined experience in financial markets. Our mission is to provide high-quality, practical trading education that helps traders at all levels improve their skills and profitability. We specialize in technical analysis, candlestick patterns, and proven trading strategies that work in real market conditions. Our goal is to bridge the gap between complex market theory and practical trading success.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@tradingmastery.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 8930015905</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Support Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM IST</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-note">
+                    <p><strong>Note:</strong> For digital product purchases, downloads are instant. Contact us only if you face technical issues with your download.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Trading Mastery</h3>
+                    <p>Your trusted source for candlestick patterns and trading education.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@tradingmastery.com</p>
+                    <p>Phone: +91 8930015905</p>
+                    <p>Support: Mon-Fri, 9 AM - 6 PM IST</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Important Policies</h4>
+                    <ul>
+                        <li><a href="#" onclick="showTerms()">Terms of Service</a></li>
+                        <li><a href="#" onclick="showPrivacy()">Privacy Policy</a></li>
+                        <li><a href="#" onclick="showRefund()">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#book-section">View Book</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Trading Mastery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Payment Modal -->
+    <div class="modal" id="paymentModal">
+        <div class="modal-content">
+            <span class="close" onclick="closePaymentModal()">&times;</span>
+            <h2>Complete Your Purchase</h2>
+            <div class="payment-summary">
+                <h3>Order Summary</h3>
+                <div class="summary-item">
+                    <span>Candlestick Chart Patterns Guide (PDF)</span>
+                    <span>₹48</span>
+                </div>
+                <div class="summary-savings">
+                    <span>You Save: ₹251 (84% OFF)</span>
+                </div>
+                <div class="summary-total">
+                    <span>Total: ₹48</span>
+                </div>
+            </div>
+            <div id="payu-payment-container">
+                <!-- Payment Methods -->
+                <div style="text-align: center; margin: 20px 0;">
+                    <h4 style="margin: 0 0 20px 0; color: #333; font-size: 18px; font-weight: bold;">Choose Your Payment Method:</h4>
+                </div>
+                
+                <!-- Primary Razorpay Payment -->
+                <div style="text-align: center; margin: 15px 0; padding: 20px; background: #e8f5e8; border-radius: 8px; border: 2px solid #4CAF50;">
+                    <h4 style="margin: 0 0 15px 0; color: #4CAF50; font-size: 16px;">💳 Instant Online Payment - Most Popular</h4>
+                    <div style="background: white; padding: 20px; border-radius: 8px; margin: 10px 0;">
+                        <h5 style="margin: 0 0 15px 0; color: #333; font-size: 16px;">💰 Pay with Card, UPI, Net Banking</h5>
+                        <button id="rzp-button" style="width: 100%; max-width: 300px; background: linear-gradient(45deg, #4CAF50, #66BB6A); text-align: center; font-weight: 800; padding: 15px 20px; color: white; font-size: 16px; border: none; border-radius: 8px; cursor: pointer; transition: all 0.3s ease;"
+                                onclick="processPayment()">
+                            <i class="fas fa-credit-card" style="margin-right: 8px;"></i>
+                            Pay ₹48 Now
+                        </button>
+                        <p style="font-size: 12px; color: #666; margin: 10px 0 0 0;">Secure payment powered by Razorpay - Instant download after payment</p>
+                    </div>
+                </div>
+                
+                <!-- Alternative Payment Methods -->
+                <div style="text-align: center; margin: 15px 0; padding: 20px; background: #f8f9fa; border-radius: 8px; border: 1px solid #ddd;">
+                    <h4 style="margin: 0 0 15px 0; color: #666; font-size: 14px;">Alternative Payment Options:</h4>
+                    
+                    <!-- UPI Payment -->
+                    <div style="margin: 10px 0; padding: 10px; background: white; border-radius: 8px; border: 1px solid #ddd;">
+                        <h6 style="margin: 0 0 8px 0; color: #333; font-size: 14px;">� Direct UPI Payment</h6>
+                        <button style="background: #673AB7; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; margin: 3px; min-width: 150px; font-weight: bold; font-size: 14px;" 
+                                onclick="showUPIPayment()">
+                            <i class="fab fa-google-pay" style="margin-right: 5px;"></i>
+                            UPI Payment
+                        </button>
+                        <p style="font-size: 11px; color: #666; margin: 5px 0;">Google Pay, PhonePe, Paytm</p>
+                    </div>
+                    
+                    <!-- Direct Call Payment -->
+                    <div style="margin: 10px 0; padding: 10px; background: white; border-radius: 8px; border: 1px solid #ddd;">
+                        <h6 style="margin: 0 0 8px 0; color: #333; font-size: 14px;">� Call Support</h6>
+                        <button style="background: #28a745; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; margin: 3px; min-width: 150px; font-weight: bold; font-size: 14px;" 
+                                onclick="contactSupport()">
+                            <i class="fas fa-phone" style="margin-right: 5px;"></i>
+                            +91 8930015905
+                        </button>
+                        <p style="font-size: 11px; color: #666; margin: 5px 0;">Personal assistance</p>
+                    </div>
+                    
+                    <!-- WhatsApp Payment -->
+                    <div style="margin: 10px 0; padding: 10px; background: white; border-radius: 8px; border: 1px solid #ddd;">
+                        <h6 style="margin: 0 0 8px 0; color: #333; font-size: 14px;">💬 WhatsApp</h6>
+                        <button style="background: #25D366; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; margin: 3px; min-width: 150px; font-weight: bold; font-size: 14px;" 
+                                onclick="openWhatsApp()">
+                            <i class="fab fa-whatsapp" style="margin-right: 5px;"></i>
+                            WhatsApp
+                        </button>
+                        <p style="font-size: 11px; color: #666; margin: 5px 0;">Instant chat support</p>
+                    </div>
+                </div>
+                
+                <!-- Success Guarantee -->
+                <div style="text-align: center; margin: 20px 0; padding: 15px; background: #e8f5e8; border-radius: 8px;">
+                    <p style="margin: 0; font-size: 16px; color: #2c5530; font-weight: bold;">
+                        ✅ 100% Success Guarantee - Instant download after payment!
+                    </p>
+                    <p style="margin: 5px 0 0 0; font-size: 14px; color: #2c5530;">
+                        💰 Only ₹48 - Save ₹251 today!
+                    </p>
+                </div>
+                
+                <!-- Demo Download for Testing -->
+                <div style="text-align: center; margin-top: 20px; padding: 15px; background: #e8f4fd; border-radius: 8px;">
+                    <p style="margin: 0 0 10px 0; font-size: 14px; color: #2c3e50; font-weight: bold;">For Testing & Demo:</p>
+                    <button style="background: #667eea; color: white; border: none; padding: 12px 25px; border-radius: 8px; cursor: pointer; font-size: 14px;" 
+                            onclick="simulatePaymentSuccess()">
+                        🔻 Demo Download (Test Only)
+                    </button>
+                </div>
+            </div>
+            <p class="payment-security">
+                <i class="fas fa-lock"></i>
+                Your payment is secured by Razorpay
+            </p>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Payment Successful!</h2>
+            <p>Thank you for your purchase. Your candlestick patterns guide is ready for download.</p>
+            <button class="btn-primary" onclick="downloadBook()">
+                <i class="fas fa-download"></i>
+                Download Your Guide
+            </button>
+        </div>
+    </div>
+
+    <!-- Terms of Service Modal -->
+    <div class="modal" id="termsModal">
+        <div class="modal-content policy-modal">
+            <span class="close" onclick="closeModal('termsModal')">&times;</span>
+            <h2>Terms of Service</h2>
+            <div class="policy-content">
+                <h3>1. Acceptance of Terms</h3>
+                <p>By purchasing and using our digital products, you agree to be bound by these Terms of Service.</p>
+                
+                <h3>2. Digital Product License</h3>
+                <p>Upon purchase, you receive a personal, non-transferable license to use the candlestick patterns guide for your personal trading education.</p>
+                
+                <h3>3. Restrictions</h3>
+                <p>You may not redistribute, resell, or share this digital product with others. The content is for your personal use only.</p>
+                
+                <h3>4. Disclaimer</h3>
+                <p>Trading involves risk. The information provided is for educational purposes only and should not be considered as financial advice. Past performance does not guarantee future results.</p>
+                
+                <h3>5. Limitation of Liability</h3>
+                <p>Trading Mastery shall not be liable for any trading losses or damages arising from the use of this educational material.</p>
+                
+                <h3>6. Governing Law</h3>
+                <p>These terms are governed by Indian law and any disputes will be subject to the jurisdiction of Indian courts.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div class="modal" id="privacyModal">
+        <div class="modal-content policy-modal">
+            <span class="close" onclick="closeModal('privacyModal')">&times;</span>
+            <h2>Privacy Policy</h2>
+            <div class="policy-content">
+                <h3>1. Information We Collect</h3>
+                <p>We collect payment information through secure payment gateways and basic contact details for customer support purposes.</p>
+                
+                <h3>2. How We Use Your Information</h3>
+                <p>Your information is used solely to process your purchase and provide customer support. We do not share your personal information with third parties.</p>
+                
+                <h3>3. Data Security</h3>
+                <p>We use industry-standard security measures to protect your personal and payment information. All transactions are processed through secure payment gateways.</p>
+                
+                <h3>4. Cookies</h3>
+                <p>Our website may use cookies to improve user experience and track website performance. You can disable cookies in your browser settings.</p>
+                
+                <h3>5. Contact Information</h3>
+                <p>For any privacy-related concerns, please contact us at info@tradingmastery.com or call +91 8930015905.</p>
+                
+                <h3>6. Policy Updates</h3>
+                <p>We may update this privacy policy from time to time. Any changes will be posted on this page.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Refund Policy Modal -->
+    <div class="modal" id="refundModal">
+        <div class="modal-content policy-modal">
+            <span class="close" onclick="closeModal('refundModal')">&times;</span>
+            <h2>Refund Policy</h2>
+            <div class="policy-content">
+                <h3>No Refund Policy</h3>
+                <p><strong>All sales are final.</strong> By purchasing this digital product, you acknowledge and agree that no refunds will be provided under any circumstances.</p>
+                
+                <h3>Digital Product Nature</h3>
+                <p>Since this is a digital product that is delivered instantly upon payment, we cannot offer refunds once the product has been accessed or downloaded.</p>
+                
+                <h3>Preview Available</h3>
+                <p>We provide preview images and detailed descriptions of the product content. Please review these carefully before making your purchase.</p>
+                
+                <h3>Technical Issues</h3>
+                <p>If you experience technical difficulties with downloading your purchase, please contact our support team at info@tradingmastery.com or +91 8930015905.</p>
+                
+                <h3>Quality Guarantee</h3>
+                <p>We stand behind the quality of our educational materials. Our candlestick patterns guide contains 150+ pages of professional trading content.</p>
+                
+                <h3>Contact Support</h3>
+                <p>For any questions about this policy, please contact us before making your purchase. Our support hours are Monday-Friday, 9 AM - 6 PM IST.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
